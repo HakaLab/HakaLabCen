@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>Reporte Resultado Test Automatizado</title>
+<link href='css/style.css' rel='stylesheet'><script type='text/JavaScript'>function desplegarContraer(cual,desde) { var elElemento=document.getElementById(cual);if(elElemento.className == 'elementoVisible') {elElemento.className = 'elementoOculto';desde.className = 'linkContraido'; } else {elElemento.className = 'elementoVisible';desde.className = 'linkExpandido';}}</script></head><body>
+<div class='cont_prin'><div class='banner'>
+<img src='images/logo_scotiabank.png'><h1>Reporte: 02-may-2018 11:03:58</h1></div>
+<table>
+<tr class='titulo'><td>Features</td><td>Escenarios</td><td>Aprobadas</td><td>No Definidas</td><td>Pendientes</td><td>Ignoradas</td><td>Falladas</td><td>Tiempo</td><td class='n'>Porcentaje</td></tr>
+<tr><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0:0:19</td><td class='n'>0%</td></tr></table>
+<div class='cont_sec'>
+<div class='reporte'>
+<h2>FIRST STEP FOR CRD</h2><hr/>
+<span class='descripcion'><div onclick="desplegarContraer('bloqueOculto1',this);" class='linkContraido'>Entry all items (Ver Mas)</div></span><span class='tiempo'>7.044 seg.</span><span class='estado fail'>Fallido!</span><br/>
+<div id='bloqueOculto1' class='elementoOculto'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"crdTxtComprobante"}
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'CLS3108141214O', ip: '10.235.46.170', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\hguerra\AppData\Local\Temp\scoped_dir13072_17875}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: a33143735d4531e52f1893d3ffde3849
+*** Element info: {Using=id, value=crdTxtComprobante}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at cl.scotiabank.publicsite.automation.crd.definition.steps.StepOneDefinition.valid_the_correct_message(StepOneDefinition.java:52)
+	at ?.Then Valid the correct message.(steps/StepOneDefinition.feature:8)
+</div><span class='descripcionDetalle'>Given Entry value for all items "Prueba Qa", "83671505", "949516650", "eduardo.rodriguez@scotiabank.cl", "Metropolitana de Santiago"</span><span class='tiempoDetalle'>5.339 seg.</span><span class='estadoDetalle aproved'>Aprobada!</span><br/>
+<span class='descripcionDetalle'>When Must click the button</span><span class='tiempoDetalle'>0.086 seg.</span><span class='estadoDetalle aproved'>Aprobada!</span><br/>
+<span class='descripcionDetalle'><div onclick="desplegarContraer('bloqueOculto1_2',this);" class='linkContraido'>Then Valid the correct message. (Ver Mas)</div></span><span class='tiempoDetalle'>7.044 seg.</span><span class='estadoDetalle fail'>Fallido!</span><br/>
+<div id='bloqueOculto1_2' class='elementoOculto'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"crdTxtComprobante"}
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'CLS3108141214O', ip: '10.235.46.170', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\hguerra\AppData\Local\Temp\scoped_dir13072_17875}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: a33143735d4531e52f1893d3ffde3849
+*** Element info: {Using=id, value=crdTxtComprobante}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at cl.scotiabank.publicsite.automation.crd.definition.steps.StepOneDefinition.valid_the_correct_message(StepOneDefinition.java:52)
+	at ?.Then Valid the correct message.(steps/StepOneDefinition.feature:8)
+</div></div>
+</div></div></body></html>
